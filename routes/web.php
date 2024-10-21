@@ -21,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/chi-siamo', function () {
-    return view('subpages.about');
+    return view('subpages.about'); // Commento
 });
 
 Route::get('/books', [BookController::class, 'index']);
