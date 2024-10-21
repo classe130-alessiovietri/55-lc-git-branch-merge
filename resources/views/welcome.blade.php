@@ -3,7 +3,7 @@
 @section('page-title', 'Home')
 
 @section('main-content')
-<h1>
+<h1 class="text-center">
     55 LC Git Branch Merge
 </h1>
 @endsection
