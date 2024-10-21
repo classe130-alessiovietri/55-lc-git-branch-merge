@@ -21,6 +21,4 @@ Route::get('/chi-siamo', function () {
     return view('subpages.about');
 });
 
-Route::get('/books', function () {
-    return view('books.index');
-});
+Route::get('/books', function () { return view('books.index'); });
