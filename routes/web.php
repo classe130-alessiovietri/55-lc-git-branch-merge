@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Controllers
+use App\Http\Controllers\Guest\BookController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +24,4 @@ Route::get('/chi-siamo', function () {
     return view('subpages.about');
 });
 
-Route::get('/books', function () { return view('books.index'); });
+Route::get('/books', [BookController::class, 'index']);
